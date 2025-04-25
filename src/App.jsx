@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <h2 id="Heading">Mood music recommender</h2>
-      <Dropdown onMoodSelect={handleMoodSelect}></Dropdown>
+      <Dropdown handleMoodSelect={handleMoodSelect}></Dropdown>
       <TrackList selectedMood={selectedMood}></TrackList>
     </>
   );

@@ -1,11 +1,11 @@
 import React from "react";
 
-function Dropdown({ onMoodSelect }) {
+function Dropdown({ handleMoodSelect }) {
   const moods = ["chill", "sad", "happy", "party", "focus"];
 
   const handlechange = (event) => {
     const selectedMood = event.target.value;
-    onMoodSelect(selectedMood);
+    handleMoodSelect(selectedMood);
   };
   return (
     <div className="dropdown">
