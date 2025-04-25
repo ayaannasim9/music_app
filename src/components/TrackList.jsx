@@ -12,7 +12,7 @@ function TrackList({ selectedMood }) {
       setLoading(true);
       try {
         const response = await fetch(
-          `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=5&q=${selectedMood}+music&key=${API_KEY}`
+          `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=5&q=hindi+${selectedMood}+music&key=${API_KEY}`
         );
 
         const data = await response.json();
