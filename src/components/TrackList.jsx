@@ -1,5 +1,3 @@
-import { moods } from "../data/moods";
-import { moodTracks } from "../data/tracks";
 import { useEffect, useState } from "react";
 
 function TrackList({ selectedMood }) {
