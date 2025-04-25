@@ -8,7 +8,7 @@ function Dropdown({ onMoodSelect }) {
     onMoodSelect(selectedMood);
   };
   return (
-    <div>
+    <div className="dropdown">
       <label>Choose a mood</label>
       <select id="mood-select" onChange={handlechange}>
         <option value="">--select--</option>
