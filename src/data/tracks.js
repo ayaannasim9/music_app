@@ -2,8 +2,8 @@
 export const moodTracks = {
   chill: [
     {
-      title: "lofi hip hop radio",
-      url: "https://www.youtube.com/watch?v=jfKfPfyJRdk",
+      title: "Sooraj Dooban Hai",
+      url: "https://www.youtube.com/watch?v=nJZcbidTutE&pp=ygURY2hpbGwgaGluZGkgc29uZ3M%3D",
     },
     {
       title: "Chillhop Essentials",
@@ -11,10 +11,13 @@ export const moodTracks = {
     },
   ],
   sad: [
-    { title: "Sad Hours", url: "https://www.youtube.com/watch?v=5qap5aO4i9A" },
     {
-      title: "Emotional Piano",
-      url: "https://www.youtube.com/watch?v=3pL5jV9YxDo",
+      title: "Woh Lamhein Woh Baatein",
+      url: "https://www.youtube.com/watch?v=y12BRDS1CHI&pp=ygUMIGhpbmRpIHNvbmdz",
+    },
+    {
+      title: "Kuch Khaas",
+      url: "https://www.youtube.com/watch?v=O7tvHh3MPSs&pp=ygUca3VjaCBraGFhcyBoYWkga3VjaCBwYWFzIGhhaQ%3D%3D",
     },
   ],
   happy: [

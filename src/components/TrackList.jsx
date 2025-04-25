@@ -1,5 +1,8 @@
 import { moods } from "../data/moods";
 import { moodTracks } from "../data/tracks";
+
+const API_KEY = import.meta.env.VITE_YOUTUBE_API_KEY;
+
 function TrackList({ selectedMood }) {
   if (!selectedMood) return null;
   if (!moods.includes(selectedMood)) {
