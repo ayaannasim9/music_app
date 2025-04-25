@@ -7,8 +7,8 @@ function TrackList({ selectedMood }) {
   }
   const tracks = moodTracks[selectedMood];
   return (
-    <div>
-      <h2>Tracks for the selected mood : </h2>
+    <div className="track-display">
+      <h2>Here are some tracks for the selected mood : </h2>
       <ul>
         {tracks.map((track, index) => (
           <li key={index}>
@@ -18,6 +18,7 @@ function TrackList({ selectedMood }) {
           </li>
         ))}
       </ul>
+      <p>Enjoy!😊</p>
     </div>
   );
 }
