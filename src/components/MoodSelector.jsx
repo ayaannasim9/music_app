@@ -9,6 +9,7 @@ function Dropdown({ handleMoodSelect }) {
 
   const handleSubmit = (event) => {
     const mood = inputValue.trim().toLowerCase();
+    setInputValue("");
     if (mood) {
       handleMoodSelect(mood);
     }

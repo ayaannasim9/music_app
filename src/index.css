@@ -123,3 +123,60 @@ body {
     transform: translateY(0);
   }
 }
+
+/* Search Input (Spotify Style) */
+#mood-input {
+  background-color: #282828; /* Dark background matching Spotify's theme */
+  color: #ffffff; /* White text */
+  border: 1px solid #3e3e3e; /* Subtle border for depth */
+  border-radius: 8px; /* Rounded corners */
+  padding: 0.8rem 1rem; /* Comfortable padding */
+  font-size: 1rem; /* Readable font size */
+  font-weight: 500; /* Medium weight for clarity */
+  width: 200px; /* Fixed width for consistency */
+  outline: none; /* Remove default outline */
+  transition: all 0.3s ease; /* Smooth transitions for interactions */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+/* Input Hover and Focus States */
+#mood-input:hover,
+#mood-input:focus {
+  border-color: #1db954; /* Spotify green border on hover/focus */
+  background-color: #333333; /* Slightly lighter background */
+  box-shadow: 0 2px 12px rgba(29, 185, 84, 0.2); /* Green-tinted shadow */
+}
+
+/* Placeholder Styling */
+#mood-input::placeholder {
+  color: #b3b3b3; /* Light gray placeholder text */
+  font-weight: 400; /* Lighter weight for placeholder */
+}
+
+/* Search Button (Spotify Style) */
+.dropdown button {
+  background-color: #1db954; /* Spotify green */
+  color: #000000; /* Black text for contrast */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 0.8rem 1.5rem; /* Comfortable padding */
+  font-size: 1rem; /* Readable font size */
+  font-weight: 600; /* Bold text */
+  cursor: pointer; /* Pointer on hover */
+  margin-left: 0.5rem; /* Space between input and button */
+  transition: all 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+/* Button Hover State */
+.dropdown button:hover {
+  background-color: #1ed760; /* Lighter Spotify green on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 4px 12px rgba(29, 185, 84, 0.3); /* Enhanced shadow */
+}
+
+/* Button Active State */
+.dropdown button:active {
+  transform: translateY(0); /* Reset lift on click */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Reduced shadow on click */
+}
