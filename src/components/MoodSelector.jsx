@@ -16,7 +16,7 @@ function Dropdown({ handleMoodSelect }) {
   };
   return (
     <div className="dropdown">
-      <label htmlFor="mood-input">Type your mood</label>
+      <label htmlFor="mood-input">What music do you wanna listen to?</label>
       <input
         id="mood-input"
         type="text"
