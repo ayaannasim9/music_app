@@ -1,23 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Dropdown({ handleMoodSelect }) {
-  const moods = ["chill", "sad", "happy", "party", "focus"];
+  const [inputValue, setInputValue] = useState("");
 
   const handlechange = (event) => {
-    const selectedMood = event.target.value;
-    handleMoodSelect(selectedMood);
+    setInputValue(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    const mood = inputValue.trim().toLowerCase();
+    if (mood) {
+      handleMoodSelect(mood);
+    }
   };
   return (
     <div className="dropdown">
-      <label>Choose a mood</label>
-      <select id="mood-select" onChange={handlechange}>
-        <option value="">--select--</option>
-        {moods.map((mood) => (
-          <option key={mood} value={mood}>
-            {mood.charAt(0).toUpperCase() + mood.slice(1)}
-          </option>
-        ))}
-      </select>
+      <label htmlFor="mood-input">Type your mood</label>
+      <input
+        id="mood-input"
+        type="text"
+        placeholder="Enter song:"
+        onChange={handlechange}
+        value={inputValue}
+      ></input>
+      <button onClick={handleSubmit}>Search</button>
     </div>
   );
 }
